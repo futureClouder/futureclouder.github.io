@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>加载ing</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .container-fluid {
+            display: flex;
+            flex-direction: column;  /* 垂直排列 */
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    </style>
+    <!-- Bootstrap5 资源保持不变 -->
+    <link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/popper.js/2.11.2/umd/popper.min.js"></script>
+    <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <!-- 头像容器 -->
+    <div class="d-flex justify-content-center mb-4">
+        <img src="src/IMG_0890.JPG"
+             class="rounded-circle"
+             style="width: 100px; height: 100px; object-fit: cover;">
+    </div>
+
+    <!-- 加载指示器 -->
+    <div class="text-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-4 text-muted" style="font-size: large">魏嘉轶 欢迎登录网站</p>
+        <p class="mt-2 text-muted">正在加载中，请稍后.....</p>
+    </div>
+</div>
+
+<script>
+window.onload = function () {
+    setTimeout(function () {
+        window.location.href = "homepage.html"
+    }, 4000);
+}
+</script>
+</body>
+</html>>
